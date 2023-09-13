@@ -12,18 +12,20 @@ const Button = ({ color, href, children }) => {
     setIsClicked(true);
     setTimeout(() => {
       router.push(href);
-    }, 0);
+    }, 500);
+
+    const button = e.currentTarget;
+    button.classList.add('moved');
   };
 
   return (
     <a
-      className={`${styles.button} ${styles[color]} `}
+      className={`${styles.button} ${styles[color]} ${isClicked ? styles.moved : ''}`}
       onClick={handleClick}
     >
       <div className={styles.label}>{children}</div>
     </a>
   );
 };
-
 
 export default Button;

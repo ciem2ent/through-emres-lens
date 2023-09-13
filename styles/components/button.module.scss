@@ -1,29 +1,25 @@
-@import "../variables.scss";
+/* button.module.scss */
+@import '../variables.scss';
 
 .button {
     height: ($size-s*5);
     margin-bottom: $size-m;
     border-radius: $size-xxl;
     border: 1px solid $gray-900;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
-    // box-shadow: $shadow;
 
     .label {
         font-size: $size-xl;
         letter-spacing: -($size-xxxs/4);
         padding: 0 $size-m;
-        
     }
 
     &.primary-light {
         background-color: $primary-light;
     }
-    
+
     &.secondary-light {
         background-color: $secondary-light;
     }
@@ -35,7 +31,21 @@
     &.red {
         background-color: $red;
     }
-      
+
+    /* Define a CSS animation for the button movement */
+    &.moved {
+        animation: moveButton 1s ease forwards;
+    }
 }
 
+@keyframes moveButton {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
+    to {
+        transform: translateY(-70vh);
+        opacity: 1;
+    }
+}

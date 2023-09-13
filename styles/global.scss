@@ -14,16 +14,13 @@ a {
 
 body {
     background-color: $default-bg;
-    transition: background-color 2s ease;
-    /* Add a smooth transition effect for background color */
+    transition: background-color 1s ease-in;
 
     &.photography-page {
         background-color: $secondary-light;
-        /* Set the background color for the Photography page */
     }
 
     &.about-page {
         background-color: $secondary-light;
-        /* Set the background color for the Photography page */
     }
 }
