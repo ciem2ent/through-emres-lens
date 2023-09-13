@@ -1,0 +1,25 @@
+/* home.module.scss */
+@import '../variables.scss';
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    right: $size-m;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Apply a smooth transition to the button */
+.navbar .photography-button {
+    transition: transform 300ms ease-out, background-color 300ms ease-out;
+    transform: translateY(0);
+}
+
+/* Add a class when you want to move the button up and change its background color */
+.navbar .photography-button.moved {
+    transform: translateY(-$size-m);
+    /* Move the button up */
+    background-color: $secondary-light;
+    /* Change the button's background color */
+}

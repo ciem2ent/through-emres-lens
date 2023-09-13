@@ -1,0 +1,30 @@
+@import '../variables.scss';
+
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+
+    .text {
+        font-size: $size-xxxl;
+        color: transparent;
+        text-shadow: 0 0 $blur-high $gray-999;
+        animation: blink 3s infinite;
+
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.6;
+            }
+        }
+
+    }
+}

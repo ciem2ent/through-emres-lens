@@ -1,0 +1,14 @@
+@import "../variables.scss";
+
+.header {
+    position: absolute;
+    top: $size-m;
+    left: $size-m;
+
+    .text {
+        font-size: $size-l;
+        color: transparent;
+        text-shadow: 0 0 $blur-low $gray-999;
+    }
+}
+

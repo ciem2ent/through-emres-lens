@@ -1,0 +1,29 @@
+/* global.scss */
+@import 'variables';
+
+$default-bg: $gray-000;
+
+.font-fahkwang {
+    font-family: 'Fahkwang', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: $default-bg;
+    transition: background-color 2s ease;
+    /* Add a smooth transition effect for background color */
+
+    &.photography-page {
+        background-color: $secondary-light;
+        /* Set the background color for the Photography page */
+    }
+
+    &.about-page {
+        background-color: $secondary-light;
+        /* Set the background color for the Photography page */
+    }
+}

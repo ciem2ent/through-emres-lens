@@ -1,0 +1,42 @@
+// gray
+$gray-999: #1A1A1A;
+$gray-900: #333333;
+$gray-800: #4D4D4D;
+$gray-600: #737373;
+$gray-400: #B3B3B3;
+$gray-200: #CCCCCC;
+$gray-100: #E6E6E6;
+$gray-000: #FAFAFA;
+
+// primary
+$primary-main: #80633D;
+$primary-light: #CCB28F;
+$primary-dark: #4D3B24;
+
+// secondary
+$secondary-main: #3D6880;
+$secondary-light: #8FAEBF;
+$secondary-dark: #2B4959;
+
+// diverse
+$purple: #AA8FCC;
+$red: #BF8F8F;
+
+
+// sizes
+$size-xxxs: 0.5rem;      // 8px
+$size-xxs: 0.875rem;     // 14px
+$size-xs: 1rem;          // 16px
+$size-s: 1.25rem;        // 20px
+$size-m: 1.5rem;         // 24px
+$size-l: 2rem;           // 32px
+$size-xl: 3rem;          // 48px
+$size-xxl: 4rem;         // 64px
+$size-xxxl: 8rem;        // 128px
+
+
+// effects
+$blur-low: $size-xxxs/2;
+$blur-high: $size-xs;
+
+$shadow: 0px 4px 8px rgba( 0, 0, 0, 0.25 );

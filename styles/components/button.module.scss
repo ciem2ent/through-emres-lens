@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.button {
+    height: ($size-s*5);
+    margin-bottom: $size-m;
+    border-radius: $size-xxl;
+    border: 1px solid $gray-900;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    // box-shadow: $shadow;
+
+    .label {
+        font-size: $size-xl;
+        letter-spacing: -($size-xxxs/4);
+        padding: 0 $size-m;
+        
+    }
+
+    &.primary-light {
+        background-color: $primary-light;
+    }
+    
+    &.secondary-light {
+        background-color: $secondary-light;
+    }
+
+    &.purple {
+        background-color: $purple;
+    }
+
+    &.red {
+        background-color: $red;
+    }
+      
+}
+
+
