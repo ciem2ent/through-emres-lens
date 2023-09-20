@@ -15,7 +15,7 @@
 
     .image {
         position: absolute;
-        left: 24px;
+        left: $size-m;
         top: 20vh;
         width: 40vw;
         height: 75vh;
@@ -27,5 +27,30 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .text-name {
+        position: absolute;
+        bottom: 10vh;
+        right: $size-m;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: $size-xxl;
+    }
+
+    .text-rest {
+        position: absolute;
+        bottom: -30vh;
+        right: $size-m;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: $size-xl;
+        
     }
 }

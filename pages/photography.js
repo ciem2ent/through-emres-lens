@@ -55,13 +55,12 @@ const Photography = () => {
                 </div>
                 <div className={`${styles.content} image-container`}>
                     {images.length > 0 && (
-                        <div style={{ position: 'relative' }}>
+                        <div style={{ position: 'absolute' }}>
                             <Image
                                 src={images[currentImageIndex]}
                                 alt={`Image ${currentImageIndex}`}
-                                width={600} // Adjust the desired width
-                                height={338} // 16:9 aspect ratio (400 / 16 * 9)
-                                layout="responsive"
+                                width={400} // Adjust the desired width
+                                height={225} // 16:9 aspect ratio (400 / 16 * 9)
                             />
                         </div>
                     )}

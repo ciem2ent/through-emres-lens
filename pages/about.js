@@ -32,11 +32,16 @@ const About = () => {
                             height={4492}
                         />
                     </div>
-                    <div className={styles.text}>
-                        <div>
-                            EMRE CIMEN (©) is a software developer based in Solothurn
+                    <div>
+                        <div className={styles['text-name']}>
+                            EMRE CIMEN (©)
+                        </div>   
+                        <div className={styles['text-rest']}>
+                            is a software developer based in Solothurn<br />
+                            <br />
+                            He is currently working at Ypsomed AG as a software engineer<br />
                         </div>
-                            
+                        
                     </div>
                 </div>
             </div>
